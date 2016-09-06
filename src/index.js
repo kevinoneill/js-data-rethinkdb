@@ -410,7 +410,6 @@ Adapter.extend({
     updateOpts.returnChanges = "always"
 
     return this.selectTable(mapper, opts)
-      .get(id)
       .update(props, updateOpts)
       .run(this.getOpt('runOpts', opts))
       .then((cursor) => {
