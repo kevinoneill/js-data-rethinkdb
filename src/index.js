@@ -407,7 +407,7 @@ Adapter.extend({
     opts || (opts = {})
 
     const updateOpts = this.getOpt('updateOpts', opts)
-    updateOpts.returnChanges = true
+    updateOpts.returnChanges = "always"
 
     return this.selectTable(mapper, opts)
       .get(id)
